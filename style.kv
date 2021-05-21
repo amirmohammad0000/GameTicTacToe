@@ -1,0 +1,127 @@
+MDScreen:
+    MDLabel:
+        text: "Welcome To Game Tic-Tac-Toe"
+        font_size: 40
+        halign: "center"
+        pos_hint: {"center_x": 0.5, "center_y": 0.98}
+
+
+    MDCard:
+        pos_hint: {"center_x": 0.5, "center_y": 0.86}
+        size_hint: None, None
+        width: 1000
+        height: 150
+        padding: 10
+
+
+        MDLabel:
+            id: turn
+            text: "Turn : Player X"
+            halign: "center"
+            font_size: 40
+
+
+    MDCard:
+        pos_hint: {"center_x": 0.5, "center_y": 0.52}
+        size_hint: None, None
+        width: 530
+        height: 530
+        padding: 10
+
+        MDGridLayout:
+            cols: 3
+            spacing: 5
+
+            MDRaisedButton:
+                id: btn_1
+                size_hint: [0.2,0.2]
+                font_size: 100
+                on_press:
+                    app.button_1()
+                    app.Law()
+
+            MDRaisedButton:
+                id: btn_2
+                size_hint: [0.2,0.2]
+                font_size: 100
+                on_press:
+                    app.button_2()
+                    app.Law()
+
+            MDRaisedButton:
+                id: btn_3
+                size_hint: [0.2,0.2]
+                font_size: 100
+                on_press:
+                    app.button_3()
+                    app.Law()
+
+            MDRaisedButton:
+                id: btn_4
+                size_hint: [0.2,0.2]
+                font_size: 100
+                on_press:
+                    app.button_4()
+                    app.Law()
+
+            MDRaisedButton:
+                id: btn_5
+                size_hint: [0.2,0.2]
+                font_size: 100
+                on_press:
+                    app.button_5()
+                    app.Law()
+
+            MDRaisedButton:
+                id: btn_6
+                size_hint: [0.2,0.2]
+                font_size: 100
+                on_press:
+                    app.button_6()
+                    app.Law()
+
+            MDRaisedButton:
+                id: btn_7
+                size_hint: [0.2,0.2]
+                font_size: 100
+                on_press:
+                    app.button_7()
+                    app.Law()
+
+            MDRaisedButton:
+                id: btn_8
+                size_hint: [0.2,0.2]
+                font_size: 100
+                on_press:
+                    app.button_8()
+                    app.Law()
+
+            MDRaisedButton:
+                id: btn_9
+                size_hint: [0.2,0.2]
+                font_size: 100
+                on_press:
+                    app.button_9()
+                    app.Law()
+
+
+    MDRaisedButton:
+        text: "Play Again"
+        size_hint: [0.28,0.08]
+        font_size: 60
+        pos_hint: {"center_x": 0.5, "center_y": 0.22}
+        on_press:
+            app.play_again()
+
+
+    MDCard:
+        pos_hint: {"center_x": 0.5, "center_y": 0.1}
+        size_hint: None, None
+        width: 1000
+        height: 150
+        padding: 50
+
+        MDLabel:
+            id: result
+            font_size: 40
+            halign: "center"
